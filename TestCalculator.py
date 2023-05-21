@@ -20,3 +20,5 @@ while True:
         difference = calc.subtract(num1, num2)
     elif option == "3":
         product = calc.multiply(num1, num2)
+    elif option == "4":
+        quotient = calc.divide(num1, num2)
