@@ -16,3 +16,5 @@ while True:
     option = calc.operation()
     if option == "1":
         sum = calc.add(num1, num2)
+    elif option == "2":
+        difference = calc.subtract(num1, num2)
