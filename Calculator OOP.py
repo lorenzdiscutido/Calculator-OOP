@@ -22,6 +22,13 @@ class Calculator:
             print("The difference of the two number is:", difference)
         except ValueError:
             print("Invalid. Please try again")
+
 #Add a function that multiply the two numbers
+    def multiply(self, num1, num2):
+        try:
+            product = num1*num2
+            print("The product of the two number is:", product)
+        except ValueError:
+            print("Invalid. Please try again")
 #Add a function that divide the two numbers
 #add a function that prints the answer
