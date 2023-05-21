@@ -5,7 +5,7 @@ from Calculator_OOP import Calculator
 calc = Calculator()
 
 #show the user the options
-calc.operation()
+calc.option()
 
 while True:
     #ask the user for their numbers

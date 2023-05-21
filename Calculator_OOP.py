@@ -2,12 +2,17 @@
 class Calculator:
 
     #Show the user what to enter to use operation
-    def operation(self):
+    def option(self):
         print("Calculator operations:")
         print("Type 1 if you want to use Addition(+)")
         print("Type 2 if you want to use Subtraction(-)")
         print("Type 3 if you want to use Multiplication(x)")
         print("Type 4 if you want to use Division(/)")
+    
+    #add a function that will ask the user what operation they like to use
+    def operation(self):
+        option = input("Please select an operation:")
+        return option
     #Add a function that ask the user to input two numbers
     def input(self):
         try:
@@ -60,4 +65,6 @@ class Calculator:
                 break
             else:
                 print("Proceeding to another calculation")
+    
+    
     
