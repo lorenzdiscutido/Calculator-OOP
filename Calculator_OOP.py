@@ -1,13 +1,21 @@
 #Create a class named calculator
 class Calculator:
-#Add a function that ask the user to input two numbers
+
+    #Show the user what to enter to use operation
+    def operation(self):
+        print("Calculator operations:")
+        print("Type 1 if you want to use Addition(+)")
+        print("Type 2 if you want to use Subtraction(-)")
+        print("Type 3 if you want to use Multiplication(x)")
+        print("Type 4 if you want to use Division(/)")
+    #Add a function that ask the user to input two numbers
     def input(self):
         try:
             num1 = float(input("Please enter your first number:"))
             num2 = float(input("Please eneter your second number:"))
         except ValueError:
             print("Invalid. Please try again")
-#Add a function that add the two numbers
+    #Add a function that add the two numbers
     def add(self, num1, num2):
         print("You chose Addition as your operation")
         try:
@@ -16,7 +24,7 @@ class Calculator:
         except ValueError:
             print("Invalid. Please try again")  
 
-#Add a function that subtract the two numbers
+    #Add a function that subtract the two numbers
     def subtract(self, num1, num2):
         print("You chose Subtraction as your operation")
         try:
@@ -25,7 +33,7 @@ class Calculator:
         except ValueError:
             print("Invalid. Please try again")
 
-#Add a function that multiply the two numbers
+    #Add a function that multiply the two numbers
     def multiply(self, num1, num2):
         print("You chose Multiplication as your operation")
         try:
@@ -33,7 +41,8 @@ class Calculator:
             print("The product of the two number is:", product)
         except ValueError:
             print("Invalid. Please try again")
-#Add a function that divide the two numbers
+
+    #Add a function that divide the two numbers
     def divide(self, num1, num2):
         print("You chose Division as your operation")
         try:
@@ -42,7 +51,7 @@ class Calculator:
         except (ValueError, ZeroDivisionError):
             print("Invalid. Please try again")
 
-#Add a function that ask the user if they want to retry the calculation
+    #Add a function that ask the user if they want to retry the calculation
     def again(self):
         while True:
             retry = input("Do you want to retry?(y/n)")
