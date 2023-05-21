@@ -60,11 +60,14 @@ class Calculator:
     def again(self):
         while True:
             retry = input("Do you want to retry?(y/n)")
-            if retry.lower == "n":
+            if retry.lower() == "n":
                 print("Thank you for using this calculator")
-                break
-            else:
+                return False
+            elif retry.lower() == "y":
                 print("Proceeding to another calculation")
+                return True
+            else:
+                print("Invalid input. Please try again")
     
     
     

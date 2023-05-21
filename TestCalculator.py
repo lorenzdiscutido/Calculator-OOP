@@ -22,3 +22,8 @@ while True:
         product = calc.multiply(num1, num2)
     elif option == "4":
         quotient = calc.divide(num1, num2)
+    else:
+        print("Does not belong to any option. Please try again")
+
+    if not calc.again():
+        break
