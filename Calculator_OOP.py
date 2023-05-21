@@ -41,4 +41,14 @@ class Calculator:
             print("The quotient of the two number is", quotient)
         except (ValueError, ZeroDivisionError):
             print("Invalid. Please try again")
+
+#Add a function that ask the user if they want to retry the calculation
+    def again(self):
+        while True:
+            retry = input("Do you want to retry?(y/n)")
+            if retry.lower == "n":
+                print("Thank you for using this calculator")
+                break
+            else:
+                print("Proceeding to another calculation")
     
