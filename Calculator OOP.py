@@ -31,4 +31,9 @@ class Calculator:
         except ValueError:
             print("Invalid. Please try again")
 #Add a function that divide the two numbers
-#add a function that prints the answer
+    def divide(self, num1, num2):
+        try:
+            quotient = num1/num2
+            print("The quotient of the two number is", quotient)
+        except (ValueError, ZeroDivisionError):
+            print("Invalid. Please try again")
