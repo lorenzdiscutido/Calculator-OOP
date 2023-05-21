@@ -9,4 +9,5 @@ calc.operation()
 
 while True:
     #ask the user for their numbers
-    num1 = calc.input("Your first number:")
+    num1 = calc.input()
+    num2 = calc.input()

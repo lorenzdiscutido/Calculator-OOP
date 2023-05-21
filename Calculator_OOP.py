@@ -11,7 +11,8 @@ class Calculator:
     #Add a function that ask the user to input two numbers
     def input(self):
         try:
-            num1 = float(input("Please enter your first number:"))
+            num = float(input("Please enter your number:"))
+            return num
         except ValueError:
             print("Invalid. Please try again")
     #Add a function that add the two numbers
