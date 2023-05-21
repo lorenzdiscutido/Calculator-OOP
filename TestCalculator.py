@@ -18,3 +18,5 @@ while True:
         sum = calc.add(num1, num2)
     elif option == "2":
         difference = calc.subtract(num1, num2)
+    elif option == "3":
+        product = calc.multiply(num1, num2)
