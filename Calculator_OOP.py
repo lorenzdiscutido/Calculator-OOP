@@ -22,6 +22,7 @@ class Calculator:
             print("Invalid. Please try again")
     #Add a function that add the two numbers
     def add(self, num1, num2):
+        print("")
         print("You chose Addition as your operation")
         try:
             sum = num1 + num2
@@ -31,6 +32,7 @@ class Calculator:
 
     #Add a function that subtract the two numbers
     def subtract(self, num1, num2):
+        print("")
         print("You chose Subtraction as your operation")
         try:
             difference = num1 -num2
@@ -40,6 +42,7 @@ class Calculator:
 
     #Add a function that multiply the two numbers
     def multiply(self, num1, num2):
+        print("")
         print("You chose Multiplication as your operation")
         try:
             product = num1*num2
@@ -49,6 +52,7 @@ class Calculator:
 
     #Add a function that divide the two numbers
     def divide(self, num1, num2):
+        print("")
         print("You chose Division as your operation")
         try:
             quotient = num1/num2
@@ -61,10 +65,13 @@ class Calculator:
         while True:
             retry = input("Do you want to retry?(y/n)")
             if retry.lower() == "n":
-                print("Thank you for using this calculator")
+                print("")
+                print("Thank you for using this calculator!")
+                print("")
                 return False
             elif retry.lower() == "y":
-                print("Proceeding to another calculation")
+                print("")
+                print("Proceeding to another calculation...")
                 return True
             else:
                 print("Invalid input. Please try again")
